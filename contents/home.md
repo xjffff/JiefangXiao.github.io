@@ -1,17 +1,20 @@
 
 
-[![JiefangXiao](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/xjffff)
+[![JiefangXiao](https://img.shields.io/badge/xjffff-github-blue?logo=github)](https://github.com/xjffff)
 
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+I am a Master's student in Mathematics at the **Technical University of Munich (TUM)**, currently working as a HiWi at the **TUM Computer Vision Group**, supervised by Guandao Yang, Maolin Gao, Simon Weber, and Daniel Cremers. My research focuses on efficient alternatives to attention mechanisms for vision and operator learning models.
 
 #### Contact
 
-Email: senli[at]fas.harvard.edu
+Email: xjf1455482079[at]outlook.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+
+M.Sc., Mathematics, Technical University of Munich, 04/2024 — present.\
+M.Sc., Emerging Digital Technologies, University College London, 09/2022 — 09/2023.\
+B.Sc., Mathematics, University of Warwick, 09/2019 — 07/2022.
 
 #### Research Interests
-Machine Learning for Seismology; Foundation Model; Observational Seismology; Microseismic Monitoring
+
+Computer Vision; Attention Mechanisms; Operator Learning; Machine Learning; Optimal Transport
 
