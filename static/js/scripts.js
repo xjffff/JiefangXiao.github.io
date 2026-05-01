@@ -1,8 +1,29 @@
-
-
 const content_dir = 'contents/'
 const config_file = 'config.yml'
 const section_names = ['home', 'publications', 'projects']
+
+
+// ── Theme toggle ──
+;(function () {
+    const saved = localStorage.getItem('theme') || 'dark'
+    applyTheme(saved)
+
+    window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme')
+            const next = current === 'dark' ? 'light' : 'dark'
+            applyTheme(next)
+            localStorage.setItem('theme', next)
+        })
+    })
+
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme)
+        document.documentElement.style.colorScheme = theme
+        const icon = document.getElementById('theme-icon')
+        if (icon) icon.className = theme === 'dark' ? 'bi bi-moon-fill' : 'bi bi-sun-fill'
+    }
+})()
 
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -41,7 +62,6 @@ window.addEventListener('DOMContentLoaded', event => {
                 } catch {
                     console.log("Unknown id and value: " + key + "," + yml[key].toString())
                 }
-
             })
         })
         .catch(error => console.log(error));
@@ -56,10 +76,9 @@ window.addEventListener('DOMContentLoaded', event => {
                 const html = marked.parse(markdown);
                 document.getElementById(name + '-md').innerHTML = html;
             }).then(() => {
-                // MathJax
                 MathJax.typeset();
             })
             .catch(error => console.log(error));
     })
 
-}); 
+});
