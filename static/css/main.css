@@ -1,42 +1,70 @@
 @import "./styles.css";
 
-
+/* ── Color tokens ── */
 :root {
-    --h-title-color: #3948d2;
+    --bg-main:    #0f0f0f;
+    --bg-alt:     #161616;
+    --bg-nav:     #0a0a0a;
+    --text-body:  #c8c8c8;
+    --text-muted: #888888;
+    --text-head:  #ffffff;
+    --accent:     #6ab0f5;
+    --accent-dim: #4a8fd4;
+    --border:     rgba(255, 255, 255, 0.08);
 }
 
+/* ── Base ── */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-body);
+}
+
+a {
+    color: var(--accent);
+}
+a:hover {
+    color: var(--accent-dim);
+}
+
+/* ── Navbar ── */
 .header {
-    border-bottom: solid 2px var(--bs-blue);
-    z-index: 10000;
+    background-color: var(--bg-nav) !important;
+    border-bottom: 1px solid var(--border);
 }
 
-.bg-bottom {
-    background-color: var(--h-title-color);
+.header .navbar-brand,
+.header .nav-link {
+    color: var(--text-body) !important;
 }
 
-/* Hero section */
+.header .nav-link:hover,
+.header .nav-link.active {
+    color: var(--accent) !important;
+}
+
+/* ── Hero section ── */
 .hero-section {
     padding: 7rem 0 5rem 0;
-    background: #121010;
+    background-color: var(--bg-main);
 }
 
 .hero-name {
     font-family: "Newsreader", serif;
     font-size: 3.2rem;
     font-weight: 600;
-    color: #1a1a2e;
+    color: var(--text-head);
     margin-bottom: 1.5rem;
 }
 
-/* Profile photo */
+/* ── Profile photo ── */
 .profile-photo {
     width: 100%;
     max-width: 260px;
     border-radius: 10px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.5);
 }
 
-/* Social icons */
+/* ── Social icons ── */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -45,38 +73,70 @@
 
 .social-icons a {
     font-size: 1.9rem;
-    color: var(--h-title-color);
+    color: var(--text-muted);
     transition: color 0.2s, transform 0.2s;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #1a237e;
+    color: var(--accent);
     transform: translateY(-2px);
 }
 
-/* Section headers */
+/* ── Content sections ── */
+.section-main {
+    background-color: var(--bg-main);
+    padding: 3rem 0;
+}
+
+.section-alt {
+    background-color: var(--bg-alt);
+    padding: 3rem 0;
+}
+
 section header h2 {
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--h-title-color);
+    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    color: var(--accent);
     font-size: 2.3rem;
     line-height: 4rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.5rem;
 }
 
 section .main-body {
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2.4rem;
+    color: var(--text-body);
 }
 
-.bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+section .main-body h4 {
+    color: var(--text-head);
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.4rem;
 }
 
-.bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+section .main-body strong {
+    color: var(--text-head);
+    font-weight: 600;
 }
 
+/* ── Footer ── */
+.bg-bottom {
+    background-color: var(--bg-nav);
+    border-top: 1px solid var(--border);
+}
+
+.bg-bottom a {
+    color: var(--text-muted);
+}
+.bg-bottom a:hover {
+    color: var(--accent);
+}
+
+/* ── Responsive ── */
 @media screen and (max-width: 767px) {
     .hero-name {
         font-size: 2.4rem;
