@@ -1,4 +1,4 @@
-I am a Master's student in Mathematics at the **Technical University of Munich (TUM)**, currently working as a HiWi at the **TUM Computer Vision Group**, supervised by [Guandao Yang](https://www.guandaoyang.com/), Maolin Gao, Simon Weber, and Daniel Cremers. My research focuses on efficient alternatives to attention mechanisms for vision and operator learning models.
+I am a Master's student in Mathematics at the **Technical University of Munich (TUM)**, currently working as a HiWi at the **TUM Computer Vision Group**, supervised by [Guandao Yang](https://www.guandaoyang.com/), [Maolin Gao](https://maolingao.github.io), [Simon Weber](https://simonwebertum.github.io), and Daniel Cremers. My research focuses on efficient alternatives to attention mechanisms for vision and operator learning models.
 
 #### Education
 
